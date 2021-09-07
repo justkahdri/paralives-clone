@@ -8,7 +8,6 @@ const Home = () => {
     <main className={home.banner}>
       <Image alt="Paralives logo" src={logo} />
       <h1>Let&apos;s get this party started.</h1>
-      <p>AAAA</p>
     </main>
   );
 };
