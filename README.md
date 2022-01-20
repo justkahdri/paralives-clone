@@ -1,4 +1,4 @@
-<img src="./src/assets/images/banner.png" height="200" alt="Paralives" />
+<img src="./assets/banner.png" height="200" alt="Paralives" />
 
 # Paralives challenge
 
