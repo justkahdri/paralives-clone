@@ -10,6 +10,7 @@
   --light-grey: #dddddd;
   --gray: #737373;
   --background: #3c342f;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -34,23 +35,44 @@ h6 {
   font-family: "futura-pt", "Lato", Helvetica, sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* CONTAINER */
+
+main >*, footer >*, .banner {
+  padding: 0 5%;
+}
+
 /* BANNER */
 
 .banner {
   width: 100%;
   height: 80px;
   background-color: var(--dark);
-  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.banner a {
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-grey);
+  margin-right: 10px;
+  padding: 7px;
   display: flex;
   align-items: center;
 }
 
 .banner img {
-  width: 20px;
-  height: 20px;
-  background-color: var(--light-grey);
-  margin: 5px;
-  padding: 10px;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.banner img path {
+  fill: var(--white);
 }
 
 /* HEADER */
@@ -58,22 +80,20 @@ h6 {
 header {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-
+  width: 90%;
   height: 5vh;
   color: var(--white);
   text-transform: uppercase;
-  background-color: rgba(red, green, blue, 0);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h2 {
   font-weight: bolder;
   font-size: 22px;
   color: var(--white);
-  padding-left: 50px;
+  margin: 0;
 }
 
 .links_header {
@@ -107,6 +127,17 @@ header h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 12.5px;
+  right: auto;
+  left: auto;
+}
+
+.arrow img {
+  width: 5rem;
 }
 
 /* GAME CONCEPTS */
