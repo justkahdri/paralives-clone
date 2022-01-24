@@ -5,7 +5,7 @@
   font-family: "proxima-nova", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --white: #fff;
   --warm-gray: #333;
-  --warm-dark: #2222;
+  --warm-dark: #222;
   --dark: #272727;
   --light-grey: #dddddd;
   --gray: #737373;
@@ -50,7 +50,7 @@ main >*, footer >*, .banner {
 .banner {
   width: 100%;
   height: 80px;
-  background-color: var(--dark);
+  background-color: var(--warm-dark);
   display: flex;
   align-items: center;
 }
@@ -140,12 +140,155 @@ header h2 {
   width: 5rem;
 }
 
-/* GAME CONCEPTS */
+/* INTRODUCTION */
 
-.game_concepts img {
-  width: 182px;
-  height: 182px;
+#introduction {
+  background-color: var(--white);
+  color: var(--warm-gray);  
+  font-size: 24px;
+  white-space: pre-wrap;
+  text-align: center;
+  padding: 60px 25%;
 }
 
+#introduction h3 {
+  margin: 0 0;
+  letter-spacing: 0.01em;
+}
 
+#introduction p {
+  margin: 0 0;
+  letter-spacing: 0.02em;
+}
 
+#introduction a {
+  text-decoration: none;
+  color: var(--warm-gray);
+  padding-bottom: 0.05em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(51,51,51,.3);
+}
+
+/* IMAGE BACKGROUND */
+
+section.image_background {
+  background: rgba(0, 0, 0, .4) url(assets/images/HeightSlider.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-blend-mode: darken;
+  color: var(--white);  
+  font-size: 24px;
+  white-space: pre-wrap;
+  text-align: center;
+  padding: 60px 25%;
+  letter-spacing: 0.02em;
+}
+
+.image_background h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+  margin: 0 0;
+}
+
+.image_background p {
+  margin: 0 0;
+}
+
+#discord-slide {
+  background: rgba(0, 0, 0, .4) url(assets/images/exterior.png);
+}
+
+/* GAME CONCEPTS */
+
+.game_concepts {
+  font-size: 18px;
+  padding: 60px 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: var(--gray);
+}
+
+.game_concepts article {
+  padding: 17px;
+  width: 365px;
+}
+
+.game_concepts p {
+  font-weight: lighter;
+}
+
+.game_concepts h4 {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.game_concepts img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 35% 0;
+}
+
+/* BUTTONS */
+
+button {
+  font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 21px 34px;
+  margin: 14px;
+  background: var(--white);
+  border-color: var(--warm-gray);
+  border-radius: 30px;
+  border-width: 2px;
+}
+
+.button {
+  padding: 0px 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+}
+
+.footer a {
+  width: 30px;
+  height: 30px;
+  background-color: var(--light-grey);
+  margin-right: 10px;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.footer img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+footer p {
+  color: var(--light-grey);
+  width: 100%;
+  height: 80px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
